@@ -77,7 +77,6 @@
       $result = curl_exec($ch);
       curl_close ($ch);
    }
-}
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
