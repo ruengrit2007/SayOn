@@ -72,6 +72,7 @@
 //}
 $Topic = "NodeMCU1" ;
 $text = "Off";
-getMqttfromlineMsg($Topic,$text);
+//getMqttfromlineMsg($Topic,$text);
+pubMqtt($Topic,$text);
 //echo "OK3";
 ?>
