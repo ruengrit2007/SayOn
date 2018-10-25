@@ -32,23 +32,23 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['userId'];
    #ตัวอย่าง Message Type "Text + Sticker"
-   if($message == "เปิดไฟ"){
+   if($message == "เปิดไฟ") || ($message == "On") || ($message == "ON"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
+      $arrayPostData['messages'][0]['text'] = "เปิดไฟแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "275";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On";
       pubMqtt($Topic,$text);   
       }
-   if($message == "ปิดไฟ"){
+   if($message == "ปิดไฟ") || ($message == "Off") || ($message == "OFF"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
+      $arrayPostData['messages'][0]['text'] = "ปิดไฟให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "34";
