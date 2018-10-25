@@ -71,7 +71,7 @@ $events = json_decode($content, true);
 //	}
 //}
 $Topic = "NodeMCU1" ;
-$text = "On";
+$text = "Off";
 getMqttfromlineMsg($Topic,$text);
 echo "OK3";
 ?>
