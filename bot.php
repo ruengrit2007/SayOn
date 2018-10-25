@@ -32,7 +32,7 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['userId'];
    #ตัวอย่าง Message Type "Text + Sticker"
-   if($message == "เปิดไฟ") || ($message == "On") || ($message == "ON"){
+   if($message == "เปิดไฟ" || $message == "On" || $message == "ON"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "เปิดไฟแล้วครับ";
@@ -45,7 +45,7 @@
       $text = "On";
       pubMqtt($Topic,$text);   
       }
-   if($message == "ปิดไฟ") || ($message == "Off") || ($message == "OFF"){
+   if($message == "ปิดไฟ" || $message == "Off" || $message == "OFF"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "ปิดไฟให้แล้วครับ";
