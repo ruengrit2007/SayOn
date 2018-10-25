@@ -112,6 +112,32 @@
       $text = "On4";
       pubMqtt($Topic,$text);   
       }
+    if($message == "เปิดไฟหลอดที่ 5" || $message == "On5" || $message == "เปิดไฟดวงที่ 5" || $message == "เปิดไฟหลังบ้าน"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟหลังบ้านแล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "275";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "On5";
+      pubMqtt($Topic,$text);   
+      }
+    if($message == "เปิดพัดลม" || $message == "On6"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งเปิดพัดลมให้แล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "602";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "On6";
+      pubMqtt($Topic,$text);   
+      }
 
     if($message == "Off"){
       $arrayPostData['to'] = $id;
@@ -190,6 +216,32 @@
       
       $Topic = "NodeMCU1" ;
       $text = "Off4";
+      pubMqtt($Topic,$text);   
+      }
+    if($message == "ปิดไฟหลอดที่ 5" || $message == "Off5" || $message == "ปิดไฟดวงที่ 5" || $message == "ปิดไฟหลังบ้าน"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟหลังบ้านแล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "2";
+      $arrayPostData['messages'][1]['stickerId'] = "34";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "Off5";
+      pubMqtt($Topic,$text);   
+      }
+    if($message == "ปิดพัดลม" || $message == "Off6"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งปิดพัดลมให้แล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "619";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "Off6";
       pubMqtt($Topic,$text);   
       }
 
