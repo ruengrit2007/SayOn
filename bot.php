@@ -42,7 +42,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On";
+      $text = "On1";
       pubMqtt($Topic,$text);   
       }
    if($message == "เปิดไฟหลอดที่ 2" || $message == "On2" || $message == "เปิดไฟดวงที่ 2" || $message == "เปิดไฟห้องนอน"){
@@ -55,7 +55,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off";
+      $text = "On2";
       pubMqtt($Topic,$text);   
       }
    if($message == "เปิดไฟหลอดที่ 3" || $message == "On3" || $message == "เปิดไฟดวงที่ 3" || $message == "เปิดไฟห้องครัว"){
@@ -68,7 +68,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On";
+      $text = "On3";
       pubMqtt($Topic,$text);   
       }
    if($message == "เปิดไฟหลอดที่ 4" || $message == "On4" || $message == "เปิดไฟดวงที่ 4" || $message == "เปิดไฟหน้าบ้าน"){
@@ -81,7 +81,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off";
+      $text = "On4";
       pubMqtt($Topic,$text);   
       }
 
@@ -95,7 +95,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On";
+      $text = "Off1";
       pubMqtt($Topic,$text);   
       }
    if($message == "ปิดไฟหลอดที่ 2" || $message == "Off2" || $message == "ปิดไฟดวงที่ 2" || $message == "ปิดไฟห้องนอน"){
@@ -108,7 +108,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off";
+      $text = "Off2";
       pubMqtt($Topic,$text);   
       }
    if($message == "ปิดไฟหลอดที่ 3" || $message == "Off3" || $message == "ปิดไฟดวงที่ 3" || $message == "ปิดไฟห้องครัว"){
@@ -121,7 +121,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On";
+      $text = "Off3";
       pubMqtt($Topic,$text);   
       }
    if($message == "ปิดไฟหลอดที่ 4" || $message == "Off4" || $message == "ปิดไฟดวงที่ 4" || $message == "ปิดไฟหน้าบ้าน"){
@@ -134,7 +134,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off";
+      $text = "Off4";
       pubMqtt($Topic,$text);   
       }
 
