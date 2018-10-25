@@ -46,6 +46,19 @@
       $text = "On";
       pubMqtt($Topic,$text);   
       }
+   if($message == "OnAll" || $message == "เปิดทั้งหมด" || $message == "เปิดไฟทั้งหมด"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งเปิดหลอดไฟทั้งหมดครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "263";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "OnAll";
+      pubMqtt($Topic,$text);   
+      }
 
    if($message == "เปิดไฟหลอดที่ 1" || $message == "On1" || $message == "เปิดไฟดวงที่ 1" || $message == "เปิดไฟห้องโถง"){
       $arrayPostData['to'] = $id;
@@ -113,6 +126,20 @@
       $text = "Off";
       pubMqtt($Topic,$text);   
       }
+   if($message == "OffAll" || $message == "ปิดทั้งหมด" || $message == "ปิดไฟทั้งหมด"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งปิดหลอดไฟทั้งหมดครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "264";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "OffAll";
+      pubMqtt($Topic,$text);   
+      }
+
    if($message == "ปิดไฟหลอดที่ 1" || $message == "Off1" || $message == "ปิดไฟดวงที่ 1" || $message == "ปิดไฟห้องโถง"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
