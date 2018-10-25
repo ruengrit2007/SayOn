@@ -42,9 +42,9 @@
  //getMqttfromlineMsg($Topic,$lineMsg);
 
 // Get POST body content
-$content = file_get_contents('php://input');
+//$content = file_get_contents('php://input');
 // Parse JSON
-$events = json_decode($content, true);
+//$events = json_decode($content, true);
 // Validate parsed JSON data
 //if (!is_null($events['ESP'])) {
 	
@@ -73,5 +73,5 @@ $events = json_decode($content, true);
 $Topic = "NodeMCU1" ;
 $text = "Off";
 getMqttfromlineMsg($Topic,$text);
-echo "OK3";
+//echo "OK3";
 ?>
