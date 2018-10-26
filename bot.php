@@ -34,8 +34,8 @@
    else if(isset($arrayJson['events'][0]['source']['groupId'])){
       $id = $arrayJson['events'][0]['source']['groupId'];
    }
-   else if(isset($arrayJson['events'][0]['source']['room'])){
-      $id = $arrayJson['events'][0]['source']['room'];
+   else if(isset($arrayJson['events'][0]['source']['roomId'])){
+      $id = $arrayJson['events'][0]['source']['roomId'];
    }
 
    #ตัวอย่าง Message Type "Text + Sticker"
