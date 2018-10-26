@@ -13,7 +13,7 @@
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);     
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");     
     curl_setopt($ch, CURLOPT_POSTFIELDS, $tmsg); 
-    //curl_setopt($ch, CURLOPT_USERPWD, "ALVaMBoxFRm7MrO:EYaq59mVqT5N0Py8XUhj8ASRh");
+    curl_setopt($ch, CURLOPT_USERPWD, "ALVaMBoxFRm7MrO:EYaq59mVqT5N0Py8XUhj8ASRh");
     $response = curl_exec($ch);
       curl_close($ch);
       echo $response . "\r\n";
@@ -30,6 +30,14 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['userId'];
 
+   if($message == "นับ 1-10"){
+       for($i=1;$i<=10;$i++){
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $i;
+          pushMsg($arrayHeader,$arrayPostData);
+       }
+    }
    #ตัวอย่าง Message Type "Text + Sticker"
    if($message == "On"){
       $arrayPostData['to'] = $id;
