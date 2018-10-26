@@ -27,8 +27,17 @@
    $arrayHeader[] = "Authorization: Bearer {$accessToken}";
    //รับข้อความจากผู้ใช้
    $message = $arrayJson['events'][0]['message']['text'];
-   //รับ id ของผู้ใช้
-   $id = $arrayJson['events'][0]['source']['userId'];
+   //รับ id ว่ามาจากไหน
+   if(isset($arrayJson['events'][0]['source']['userId']){
+      $id = $arrayJson['events'][0]['source']['userId'];
+   }
+   else if(isset($arrayJson['events'][0]['source']['groupId'])){
+      $id = $arrayJson['events'][0]['source']['groupId'];
+   }
+   else if(isset($arrayJson['events'][0]['source']['room'])){
+      $id = $arrayJson['events'][0]['source']['room'];
+   }
+
    #ตัวอย่าง Message Type "Text + Sticker"
    if($message == "On"){
       $arrayPostData['to'] = $id;
@@ -238,7 +247,7 @@
       $text = "Off6";
       pubMqtt($Topic,$text);   
       }
-   function pushMsg($arrayHeader,$arrayPostData){
+    function pushMsg($arrayHeader,$arrayPostData){
       $strUrl = "https://api.line.me/v2/bot/message/push";
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_URL,$strUrl);
@@ -250,6 +259,6 @@
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       $result = curl_exec($ch);
       curl_close ($ch);
-   }
-   exit;
+    }
+    exit;
 ?>
