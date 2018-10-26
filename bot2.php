@@ -1,4 +1,5 @@
-  // Create a client instance
+  <?php
+// Create a client instance
   client = new Paho.MQTT.Client("m15.cloudmqtt.com", 32749,"myweb"); 
   //Example client = new Paho.MQTT.Client("m11.cloudmqtt.com", 32903, "web_" + parseInt(Math.random() * 100, 10));
 
@@ -42,3 +43,4 @@
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
   }
+?>
