@@ -27,16 +27,8 @@
    $arrayHeader[] = "Authorization: Bearer {$accessToken}";
    //รับข้อความจากผู้ใช้
    $message = $arrayJson['events'][0]['message']['text'];
-   //รับ id ว่ามาจากไหน
-   if(isset($arrayJson['events'][0]['source']['userId']){
-      $id = $arrayJson['events'][0]['source']['userId'];
-   }
-   else if(isset($arrayJson['events'][0]['source']['groupId'])){
-      $id = $arrayJson['events'][0]['source']['groupId'];
-   }
-   else if(isset($arrayJson['events'][0]['source']['roomId'])){
-      $id = $arrayJson['events'][0]['source']['roomId'];
-   }
+   //รับ id ของผู้ใช้
+   $id = $arrayJson['events'][0]['source']['userId'];
 
    #ตัวอย่าง Message Type "Text + Sticker"
    if($message == "On"){
