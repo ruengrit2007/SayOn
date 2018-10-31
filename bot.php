@@ -90,7 +90,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On";
+      $text = "On#1";
       pubMqtt($Topic,$text);
       }
    if($message == "OnAll" || $message == "เปิดทั้งหมด" || $message == "เปิดไฟทั้งหมด"){
@@ -221,7 +221,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off";
+      $text = "On#0";
       pubMqtt($Topic,$text);   
       }
    if($message == "OffAll" || $message == "ปิดทั้งหมด" || $message == "ปิดไฟทั้งหมด"){
