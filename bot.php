@@ -85,8 +85,8 @@
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งทดสอบระบบ...ถ้าไฟสีฟ้าติดคือพร้อมครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "4";
-      $arrayPostData['messages'][1]['stickerId'] = "275";
+      $arrayPostData['messages'][1]['packageId'] = "1";
+      $arrayPostData['messages'][1]['stickerId'] = "406";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -217,7 +217,7 @@
       $arrayPostData['messages'][0]['text'] = "สั่งทดสอบระบบ...ถ้าไฟสีฟ้าดับคือพร้อมครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][1]['stickerId'] = "161";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
