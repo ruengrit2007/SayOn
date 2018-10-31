@@ -34,10 +34,11 @@
    $room = $arrayJson['events'][0]['source']['room'];
 
    if($message == "1"){
-       for($i=1;$i<=2;$i++){
+       for($i=1;$i<=1;$i++){
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
           $arrayPostData['messages'][0]['text'] = $i;
+          $arrayPostData['messages'][0]['text'] = $id;
           pushMsg($arrayHeader,$arrayPostData);
        }
       $Topic = "NodeMCU1" ;
