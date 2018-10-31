@@ -111,8 +111,8 @@
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องโถงแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "4";
-      $arrayPostData['messages'][1]['stickerId'] = "275";
+      $arrayPostData['messages'][1]['packageId'] = "2";
+      $arrayPostData['messages'][1]['stickerId'] = "513";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -124,8 +124,8 @@
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องนอนแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "4";
-      $arrayPostData['messages'][1]['stickerId'] = "275";
+      $arrayPostData['messages'][1]['packageId'] = "2";
+      $arrayPostData['messages'][1]['stickerId'] = "523";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -189,8 +189,8 @@
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องน้ำให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "4";
-      $arrayPostData['messages'][1]['stickerId'] = "602";
+      $arrayPostData['messages'][1]['packageId'] = "2";
+      $arrayPostData['messages'][1]['stickerId'] = "508";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -202,8 +202,8 @@
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดประตูเลื่อนหน้าบ้านให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "4";
-      $arrayPostData['messages'][1]['stickerId'] = "602";
+      $arrayPostData['messages'][1]['packageId'] = "2";
+      $arrayPostData['messages'][1]['stickerId'] = "512";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -243,7 +243,7 @@
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องโถงให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][1]['stickerId'] = "513";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -256,7 +256,7 @@
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องนอนให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][1]['stickerId'] = "26";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -269,7 +269,7 @@
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องครัวให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][1]['stickerId'] = "510";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -282,7 +282,7 @@
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟหน้าบ้านให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][1]['stickerId'] = "509";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -320,8 +320,8 @@
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องน้ำให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "4";
-      $arrayPostData['messages'][1]['stickerId'] = "619";
+      $arrayPostData['messages'][1]['packageId'] = "2";
+      $arrayPostData['messages'][1]['stickerId'] = "511";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
@@ -334,7 +334,7 @@
       $arrayPostData['messages'][0]['text'] = "สั่งปิดประตูเลื่อนหน้าบ้านแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "4";
-      $arrayPostData['messages'][1]['stickerId'] = "619";
+      $arrayPostData['messages'][1]['stickerId'] = "290";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
