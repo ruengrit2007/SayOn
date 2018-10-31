@@ -38,7 +38,7 @@
           pushMsg($arrayHeader,$arrayPostData);
        }
       $Topic = "NodeMCU1" ;
-      $text = $id;
+      $text = $message;
       pubMqtt($Topic,$text);
     }
    #ตัวอย่าง Message Type "Text + Sticker"
