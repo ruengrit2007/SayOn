@@ -243,7 +243,7 @@
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องโถงให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "513";
+      $arrayPostData['messages'][1]['stickerId'] = "506";
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
