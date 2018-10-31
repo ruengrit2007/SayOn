@@ -184,6 +184,33 @@
       $text = "On6#1";
       pubMqtt($Topic,$text);   
       }
+    if($message == "เปิดไฟหลอดที่ 7" || $message == "On7" || $message == "เปิดไฟดวงที่ 7" || $message == "เปิดไฟห้องน้ำ"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องน้ำให้แล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "602";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "On7#1";
+      pubMqtt($Topic,$text);   
+      }
+    if($message == "เปิดไฟหลอดที่ 8" || $message == "On8" || $message == "เปิดไฟดวงที่ 8" || $message == "เปิดประตูเลื่อน"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งเปิดประตูเลื่อนหน้าบ้านให้แล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "602";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "On8#1";
+      pubMqtt($Topic,$text);   
+      }
+
     if($message == "Off"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
@@ -220,7 +247,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off1";
+      $text = "On1#0";
       pubMqtt($Topic,$text);   
       }
    if($message == "ปิดไฟหลอดที่ 2" || $message == "Off2" || $message == "ปิดไฟดวงที่ 2" || $message == "ปิดไฟห้องนอน"){
@@ -233,7 +260,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off2";
+      $text = "On2#0";
       pubMqtt($Topic,$text);   
       }
    if($message == "ปิดไฟหลอดที่ 3" || $message == "Off3" || $message == "ปิดไฟดวงที่ 3" || $message == "ปิดไฟห้องครัว"){
@@ -246,7 +273,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off3";
+      $text = "On3#0";
       pubMqtt($Topic,$text);   
       }
    if($message == "ปิดไฟหลอดที่ 4" || $message == "Off4" || $message == "ปิดไฟดวงที่ 4" || $message == "ปิดไฟหน้าบ้าน"){
@@ -259,7 +286,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off4";
+      $text = "On4#0";
       pubMqtt($Topic,$text);   
       }
     if($message == "ปิดไฟหลอดที่ 5" || $message == "Off5" || $message == "ปิดไฟดวงที่ 5" || $message == "ปิดไฟหลังบ้าน"){
@@ -272,7 +299,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off5";
+      $text = "On5#0";
       pubMqtt($Topic,$text);   
       }
     if($message == "ปิดพัดลม" || $message == "Off6"){
@@ -285,9 +312,36 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "Off6";
+      $text = "On6#0";
       pubMqtt($Topic,$text);   
       }
+    if($message == "ปิดไฟหลอดที่ 7" || $message == "Off7" || $message == "ปิดไฟดวงที่ 7" || $message == "ปิดไฟห้องน้ำ"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องน้ำให้แล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "619";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "On7#0";
+      pubMqtt($Topic,$text);   
+      }
+    if($message == "ปิดไฟหลอดที่ 8" || $message == "On8" || $message == "เปิดไฟดวงที่ 8" || $message == "ปิดประตูเลื่อน"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = "สั่งปิดประตูเลื่อนหน้าบ้านแล้วครับ";
+      $arrayPostData['messages'][1]['type'] = "sticker";
+      $arrayPostData['messages'][1]['packageId'] = "4";
+      $arrayPostData['messages'][1]['stickerId'] = "619";
+      pushMsg($arrayHeader,$arrayPostData);
+      
+      $Topic = "NodeMCU1" ;
+      $text = "On8#0";
+      pubMqtt($Topic,$text);   
+      }
+
     function pushMsg($arrayHeader,$arrayPostData){
       $strUrl = "https://api.line.me/v2/bot/message/push";
       $ch = curl_init();
