@@ -46,14 +46,14 @@
       pubMqtt($Topic,$text);
     }
     if($message == "2"){
-       for($i=1;$i<=2;$i++){
+       for($i=1;$i<=1;$i++){
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
           $arrayPostData['messages'][0]['text'] = $i;
           pushMsg($arrayHeader,$arrayPostData);
        }
       $Topic = "NodeMCU1" ;
-      $text = $replyToken;
+      $text = "1";
       pubMqtt($Topic,$text);
     }
     if($message == "3"){
