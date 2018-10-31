@@ -30,9 +30,22 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['userId'];
    $replyToken = $arrayJson['events'][0]['replyToken'];
+   $groupId = $arrayJson['events'][0]['source']['groupId'];
+   $room = $arrayJson['events'][0]['source']['room'];
 
-   if($message == "นับ 1-10"){
-       for($i=1;$i<=10;$i++){
+   if($message == "1"){
+       for($i=1;$i<=2;$i++){
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $i;
+          pushMsg($arrayHeader,$arrayPostData);
+       }
+      $Topic = "NodeMCU1" ;
+      $text = $id;
+      pubMqtt($Topic,$text);
+    }
+    if($message == "2"){
+       for($i=1;$i<=2;$i++){
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
           $arrayPostData['messages'][0]['text'] = $i;
@@ -42,6 +55,29 @@
       $text = $replyToken;
       pubMqtt($Topic,$text);
     }
+    if($message == "3"){
+       for($i=1;$i<=2;$i++){
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $i;
+          pushMsg($arrayHeader,$arrayPostData);
+       }
+      $Topic = "NodeMCU1" ;
+      $text = $groupId;
+      pubMqtt($Topic,$text);
+    }
+    if($message == "4"){
+       for($i=1;$i<=2;$i++){
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $i;
+          pushMsg($arrayHeader,$arrayPostData);
+       }
+      $Topic = "NodeMCU1" ;
+      $text = $room;
+      pubMqtt($Topic,$text);
+    }
+
    #ตัวอย่าง Message Type "Text + Sticker"
    if($message == "On"){
       $arrayPostData['to'] = $id;
