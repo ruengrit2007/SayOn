@@ -328,7 +328,7 @@
       $text = "On7#0";
       pubMqtt($Topic,$text);   
       }
-    if($message == "ปิดไฟหลอดที่ 8" || $message == "On8" || $message == "เปิดไฟดวงที่ 8" || $message == "ปิดประตูเลื่อน"){
+    if($message == "ปิดไฟหลอดที่ 8" || $message == "Off8" || $message == "ปิดไฟดวงที่ 8" || $message == "ปิดประตูเลื่อน"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดประตูเลื่อนหน้าบ้านแล้วครับ";
