@@ -29,6 +29,7 @@
    $message = $arrayJson['events'][0]['message']['text'];
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['userId'];
+   $replyToken = $arrayJson['events'][0]['replyToken'];
 
    if($message == "นับ 1-10"){
        for($i=1;$i<=10;$i++){
@@ -38,7 +39,7 @@
           pushMsg($arrayHeader,$arrayPostData);
        }
       $Topic = "NodeMCU1" ;
-      $text = $msg;
+      $text = $replyToken;
       pubMqtt($Topic,$text);
     }
    #ตัวอย่าง Message Type "Text + Sticker"
