@@ -116,7 +116,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On1";
+      $text = "On1#1";
       pubMqtt($Topic,$text);   
       }
    if($message == "เปิดไฟหลอดที่ 2" || $message == "On2" || $message == "เปิดไฟดวงที่ 2" || $message == "เปิดไฟห้องนอน"){
@@ -129,7 +129,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On2";
+      $text = "On2#1";
       pubMqtt($Topic,$text);   
       }
    if($message == "เปิดไฟหลอดที่ 3" || $message == "On3" || $message == "เปิดไฟดวงที่ 3" || $message == "เปิดไฟห้องครัว"){
@@ -142,7 +142,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On3";
+      $text = "On3#1";
       pubMqtt($Topic,$text);   
       }
    if($message == "เปิดไฟหลอดที่ 4" || $message == "On4" || $message == "เปิดไฟดวงที่ 4" || $message == "เปิดไฟหน้าบ้าน"){
@@ -155,7 +155,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On4";
+      $text = "On4#1";
       pubMqtt($Topic,$text);   
       }
     if($message == "เปิดไฟหลอดที่ 5" || $message == "On5" || $message == "เปิดไฟดวงที่ 5" || $message == "เปิดไฟหลังบ้าน"){
@@ -168,7 +168,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On5";
+      $text = "On5#1";
       pubMqtt($Topic,$text);   
       }
     if($message == "เปิดพัดลม" || $message == "On6"){
@@ -181,7 +181,7 @@
       pushMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
-      $text = "On6";
+      $text = "On6#1";
       pubMqtt($Topic,$text);   
       }
     if($message == "Off"){
