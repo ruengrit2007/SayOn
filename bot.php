@@ -55,7 +55,7 @@
     }
 
    else if($message == "On"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งทดสอบระบบ...ถ้าไฟสีฟ้าติดคือพร้อมครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -68,7 +68,7 @@
       pubMqtt($Topic,$text);
       }
    else if($message == "OnAll" || $message == "เปิดทั้งหมด" || $message == "เปิดไฟทั้งหมด"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดหลอดไฟทั้งหมดครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -81,7 +81,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "เปิดไฟหลอดที่ 1" || $message == "On1" || $message == "เปิดไฟดวงที่ 1" || $message == "เปิดไฟห้องโถง"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องโถงแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -94,7 +94,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "เปิดไฟหลอดที่ 2" || $message == "On2" || $message == "เปิดไฟดวงที่ 2" || $message == "เปิดไฟห้องนอน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องนอนแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -107,7 +107,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "เปิดไฟหลอดที่ 3" || $message == "On3" || $message == "เปิดไฟดวงที่ 3" || $message == "เปิดไฟห้องครัว"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องครัวแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -120,7 +120,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "เปิดไฟหลอดที่ 4" || $message == "On4" || $message == "เปิดไฟดวงที่ 4" || $message == "เปิดไฟหน้าบ้าน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟหน้าบ้านแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -133,7 +133,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "เปิดไฟหลอดที่ 5" || $message == "On5" || $message == "เปิดไฟดวงที่ 5" || $message == "เปิดไฟหลังบ้าน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟหลังบ้านแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -146,7 +146,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "เปิดพัดลม" || $message == "On6"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดพัดลมให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -159,7 +159,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "เปิดไฟหลอดที่ 7" || $message == "On7" || $message == "เปิดไฟดวงที่ 7" || $message == "เปิดไฟห้องน้ำ"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดไฟห้องน้ำให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -172,7 +172,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "เปิดไฟหลอดที่ 8" || $message == "On8" || $message == "เปิดไฟดวงที่ 8" || $message == "เปิดประตูเลื่อน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งเปิดประตูเลื่อนหน้าบ้านให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -185,7 +185,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "Off"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งทดสอบระบบ...ถ้าไฟสีฟ้าดับคือพร้อมครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -198,7 +198,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "OffAll" || $message == "ปิดทั้งหมด" || $message == "ปิดไฟทั้งหมด"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดหลอดไฟทั้งหมดครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -211,7 +211,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "ปิดไฟหลอดที่ 1" || $message == "Off1" || $message == "ปิดไฟดวงที่ 1" || $message == "ปิดไฟห้องโถง"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องโถงให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -224,7 +224,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "ปิดไฟหลอดที่ 2" || $message == "Off2" || $message == "ปิดไฟดวงที่ 2" || $message == "ปิดไฟห้องนอน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องนอนให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -237,7 +237,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "ปิดไฟหลอดที่ 3" || $message == "Off3" || $message == "ปิดไฟดวงที่ 3" || $message == "ปิดไฟห้องครัว"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องครัวให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -250,7 +250,7 @@
       pubMqtt($Topic,$text);   
       }
    else if($message == "ปิดไฟหลอดที่ 4" || $message == "Off4" || $message == "ปิดไฟดวงที่ 4" || $message == "ปิดไฟหน้าบ้าน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟหน้าบ้านให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -263,7 +263,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "ปิดไฟหลอดที่ 5" || $message == "Off5" || $message == "ปิดไฟดวงที่ 5" || $message == "ปิดไฟหลังบ้าน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟหลังบ้านแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -276,7 +276,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "ปิดพัดลม" || $message == "Off6"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดพัดลมให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -289,7 +289,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "ปิดไฟหลอดที่ 7" || $message == "Off7" || $message == "ปิดไฟดวงที่ 7" || $message == "ปิดไฟห้องน้ำ"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดไฟห้องน้ำให้แล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
@@ -302,7 +302,7 @@
       pubMqtt($Topic,$text);   
       }
     else if($message == "ปิดไฟหลอดที่ 8" || $message == "Off8" || $message == "ปิดไฟดวงที่ 8" || $message == "ปิดประตูเลื่อน"){
-      $arrayPostData['to'] = $id;
+      $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = "สั่งปิดประตูเลื่อนหน้าบ้านแล้วครับ";
       $arrayPostData['messages'][1]['type'] = "sticker";
