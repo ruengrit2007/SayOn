@@ -61,7 +61,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "1";
       $arrayPostData['messages'][1]['stickerId'] = "406";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On#1";
@@ -74,7 +74,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "4";
       $arrayPostData['messages'][1]['stickerId'] = "263";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "OnAll#1";
@@ -87,7 +87,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "513";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On1#1";
@@ -100,7 +100,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "523";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On2#1";
@@ -113,7 +113,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "510";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On3#1";
@@ -126,7 +126,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "509";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On4#1";
@@ -139,7 +139,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "4";
       $arrayPostData['messages'][1]['stickerId'] = "275";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On5#1";
@@ -152,7 +152,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "27";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On6#1";
@@ -165,7 +165,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "508";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On7#1";
@@ -178,7 +178,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "512";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On8#1";
@@ -191,7 +191,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "161";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On#0";
@@ -204,7 +204,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "4";
       $arrayPostData['messages'][1]['stickerId'] = "264";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "OnAll#0";
@@ -217,7 +217,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "506";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On1#0";
@@ -230,7 +230,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "26";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On2#0";
@@ -243,7 +243,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "143";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On3#0";
@@ -256,7 +256,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "146";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On4#0";
@@ -269,7 +269,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "34";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On5#0";
@@ -282,7 +282,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "4";
       $arrayPostData['messages'][1]['stickerId'] = "619";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On6#0";
@@ -295,7 +295,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "2";
       $arrayPostData['messages'][1]['stickerId'] = "511";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On7#0";
@@ -308,7 +308,7 @@
       $arrayPostData['messages'][1]['type'] = "sticker";
       $arrayPostData['messages'][1]['packageId'] = "4";
       $arrayPostData['messages'][1]['stickerId'] = "290";
-      pushMsg($arrayHeader,$arrayPostData);
+      replyMsg($arrayHeader,$arrayPostData);
       
       $Topic = "NodeMCU1" ;
       $text = "On8#0";
