@@ -19,19 +19,16 @@
       echo $response . "\r\n";
     return $response;
    }
-   $accessToken = "pUSNzzZen370jm5bI5kLCmfbikfsjNmZ91BDlseT7uqm4psB6dUFRa9iC8grOXVCzHahbJoufFH/ez6U0j0ZcwHjX9tiXs3k4fECDbuQNOArtHhAl0BOm4GLen8gM12h8+YzOdqNAmdGMy+UTtxn9gdB04t89/1O/w1cDnyilFU=";//copy ข้อความ Channel access token ตอนที่ตั้งค่า
-   $content = file_get_contents('php://input');
-   $arrayJson = json_decode($content, true);
-   $arrayHeader = array();
-   $arrayHeader[] = "Content-Type: application/json";
-   $arrayHeader[] = "Authorization: Bearer {$accessToken}";
-   //รับข้อความจากผู้ใช้
-   $message = $arrayJson['events'][0]['message']['text'];
-   //รับ id ของผู้ใช้
-   $id = $arrayJson['events'][0]['source']['userId'];
-   $replyToken = $arrayJson['events'][0]['replyToken'];
-   $groupId = $arrayJson['events'][0]['source']['groupId'];
-   $room = $arrayJson['events'][0]['source']['room'];
+   $accessToken = "pUSNzzZen370jm5bI5kLCmfbikfsjNmZ91BDlseT7uqm4psB6dUFRa9iC8grOXVCzHahbJoufFH/ez6U0j0ZcwHjX9tiXs3k4fECDbuQNOArtHhAl0BOm4GLen8gM12h8+YzOdqNAmdGMy+UTtxn9gdB04t89/1O/w1cDnyilFU=";  
+    $content = file_get_contents('php://input');
+    $arrayJson = json_decode($content, true);
+    
+    $arrayHeader = array();
+    $arrayHeader[] = "Content-Type: application/json";
+    $arrayHeader[] = "Authorization: Bearer {$accessToken}";
+    
+    //รับข้อความจากผู้ใช้
+    $message = $arrayJson['events'][0]['message']['text'];
 
    if($message == "1"){
        for($i=1;$i<=1;$i++){
